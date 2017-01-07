@@ -149,7 +149,7 @@ It is useful to train a classification problem with `n` classes.
 If provided, the optional argument `weights` should be a 1D `Tensor` assigning weight to each of the classes. This is particularly useful when you have an unbalanced training set.
 
 The `input` given through a `forward()` is expected to contain scores for each class: `input` has to be a 1D `Tensor` of size `n`.
-This criterion expect a class index (1 to the number of class) as `target` when calling [`forward(input, target)`](#nn.CriterionForward) and [`backward(input, target)`](#nn.CriterionBackward).
+This criterion expects a class index as `target` when calling [`forward(input, target)`](#nn.CriterionForward) and [`backward(input, target)`](#nn.CriterionBackward).
 
 The loss can be described as:
 
